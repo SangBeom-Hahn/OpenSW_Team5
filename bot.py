@@ -28,3 +28,18 @@ while True:
 
 # # id_channel = bot.sendMessage(chat_id = public_chat_name, text = "alarm").chat_id
 # print(id_channel)
+
+""" def job():
+    now_local = datetime.datetime.now()
+    now_local_time = now_local.strftime("%Y-%m-%d %H:%M:%S")
+    
+    # 특정 시간 회피
+    if now_local.strftime("%H") >= "23" or now_local.strftime("%H") <= "6":
+        pass
+    bot.sendMessage(chat_id=chat_id, text=('지금은 ' + str(now_local_time) + ' 야'))
+
+schedule.every(0).minutes.do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1) """
