@@ -135,7 +135,7 @@ categories = [
             "supercategory": "top_t-shirt"
         }]
 
-rootDir = 'C:/Users/PiSunWoo-RTOS/Desktop/Mask_RCNN_실습데이터/'
+rootDir = 'Final Project_MMDetection/Change Number & Combine/'
 class_json = [
     '0. onepiece(dress).json', '1. onepiece(jumpsuite).json', '2. outer_cardigan.json', '3. outer_coat.json', '4. outer_jacket.json', '5. outer_jumper.json', '6. pants.json', '7. skirt.json', '8. top_blouse.json', '9. top_shirt.json', '10. top_sweater.json', '11. top_t-shirt.json']
 
@@ -230,8 +230,8 @@ val_object["categories"] = categories
 val_object["images"] = val_images
 val_object["annotations"] = val_anno
 
-with open('train.json', 'w') as outfile:
+with open('Final Project_MMDetection/train.json', 'w') as outfile:
     json.dump(train_object, outfile, indent='\t')
     
-with open('val.json', 'w') as outfile:
+with open('Final Project_MMDetection/val.json', 'w') as outfile:
     json.dump(val_object, outfile, indent='\t')
