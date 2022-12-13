@@ -23,10 +23,6 @@ json_1_id_len = len(json_data_1['annotations'])
 json_2_id_len = len(json_data_2['annotations'])
 for image_id in range(json_2_id_len):
     json_data_2['annotations'][image_id]['id'] += json_1_id_len
-    
-json_1_id_len = len(json_data_1['annotations'])
-json_2_id_len = len(json_data_2['annotations'])
-for image_id in range(json_2_id_len):
     json_data_2['annotations'][image_id]['image_id'] += json_1_id_len
     
 with open(file_path_2, 'w', encoding='utf-8') as file:
