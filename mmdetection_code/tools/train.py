@@ -21,6 +21,27 @@ from mmdet.utils import (collect_env, get_device, get_root_logger,
                          replace_cfg_vals, setup_multi_processes,
                          update_data_root)
 
+# - 텔레그램 알림 만들기
+import telegram
+import schedule
+import time
+# import datetime
+# import pytz
+
+#토큰
+token = ""                                                          #토큰은 깃허브에 올릴 때 가려야 함.
+bot = telegram.Bot(token)
+public_chat_name = "@ktest2022"
+
+# 학습 완료되면 알람이 오도록 설정
+def job():
+    now = ("Model Train and Validation Complete~~!")
+  
+    text=(str(now))
+    bot.sendMessage(chat_id = public_chat_name, text = text).chat_id
+    #print("current time = ", str(now))
+
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a detector')
@@ -230,6 +251,7 @@ def main():
             CLASSES=datasets[0].CLASSES)
     # add an attribute for visualization convenience
     model.CLASSES = datasets[0].CLASSES
+    print(datasets)
     train_detector(
         model,
         datasets,
@@ -238,7 +260,13 @@ def main():
         validate=(not args.no_validate),
         timestamp=timestamp,
         meta=meta)
+    
 
 
 if __name__ == '__main__':
     main()
+    # 학습 완료시 30분 주기로 알려줌
+    schedule.every(30).minutes.do(job)
+    while True:
+        schedule.run_pending()
+        time.sleep(30)
