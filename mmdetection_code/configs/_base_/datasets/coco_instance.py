@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = 'data/coco/'
+data_root = '../dataevery/'                                                             #경로 맞춰줌
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
@@ -33,17 +33,17 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_train2017.json',
-        img_prefix=data_root + 'train2017/',
+        ann_file=data_root + 'annotations/instances_train2017.json',                   # train json 파일 경로 맞추기
+        img_prefix=data_root + 'images/',                                              # train 이미지 경로 맞추기
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_val2017.json',
-        img_prefix=data_root + 'val2017/',
+        ann_file=data_root + 'annotations/instances_val2017.json',                     # val json 파일 경로 맞추기
+        img_prefix=data_root + 'images/',                                              # val 이미지 경로 맞추기
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_val2017.json',
-        img_prefix=data_root + 'val2017/',
+        ann_file=data_root + 'annotations/instances_val2017.json',                     # val json 파일 경로 맞추기
+        img_prefix=data_root + 'images/',                                              # test 이미지 경로 맞추기
         pipeline=test_pipeline))
 evaluation = dict(metric=['bbox', 'segm'])
