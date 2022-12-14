@@ -81,28 +81,28 @@ categories = [
         },
         {
             "id": 1,
-            "name": "onepiece(jumpsuite)",
-            "supercategory": "onepiece(jumpsuite)"
+            "name": "jumpsuite",
+            "supercategory": "jumpsuite"
         },
         {
             "id": 2,
-            "name": "outer_cardigan",
-            "supercategory": "outer_cardigan"
+            "name": "cardigan",
+            "supercategory": "cardigan"
         },
         {
             "id": 3,
-            "name": "outer_coat",
-            "supercategory": "outer_coat"
+            "name": "coat",
+            "supercategory": "coat"
         },
         {
             "id": 4,
-            "name": "outer_jacket",
-            "supercategory": "outer_jacket"
+            "name": "jacket",
+            "supercategory": "jacket"
         },
         {
             "id": 5,
-            "name": "outer_jumper",
-            "supercategory": "outer_jumper"
+            "name": "jumper",
+            "supercategory": "jumper"
         },
         {
             "id": 6,
@@ -116,26 +116,26 @@ categories = [
         },
         {
             "id": 8,
-            "name": "top_blouse",
-            "supercategory": "top_blouse"
+            "name": "blouse",
+            "supercategory": "blouse"
         },
         {
             "id": 9,
-            "name": "top_shirt",
-            "supercategory": "top_shirt"
+            "name": "shirt",
+            "supercategory": "shirt"
         },
         {
             "id": 10,
-            "name": "top_sweater",
-            "supercategory": "top_sweater"
+            "name": "sweater",
+            "supercategory": "sweater"
         },
         {
             "id": 11,
-            "name": "top_t-shirt",
-            "supercategory": "top_t-shirt"
+            "name": "t-shirt",
+            "supercategory": "t-shirt"
         }]
 
-rootDir = 'Final Project_MMDetection/Change Number & Combine/'
+rootDir = './Change Number & Combine/'
 class_json = [
     '0. onepiece(dress).json', '1. onepiece(jumpsuite).json', '2. outer_cardigan.json', '3. outer_coat.json', '4. outer_jacket.json', '5. outer_jumper.json', '6. pants.json', '7. skirt.json', '8. top_blouse.json', '9. top_shirt.json', '10. top_sweater.json', '11. top_t-shirt.json']
 
@@ -169,8 +169,8 @@ for i in class_json:
     with open(rootDir + i, 'r') as f:
         json_data = json.load(f)
         
-        for categories in json_data["categories"]:
-            categories["id"] = categoryID
+        for combined_json_categories in json_data["categories"]:
+            combined_json_categories["id"] = categoryID
             
         for images in json_data["images"]:
             if(id < divide[categoryID]):
@@ -230,8 +230,8 @@ val_object["categories"] = categories
 val_object["images"] = val_images
 val_object["annotations"] = val_anno
 
-with open('Final Project_MMDetection/train.json', 'w') as outfile:
+with open('./train.json', 'w') as outfile:
     json.dump(train_object, outfile, indent='\t')
     
-with open('Final Project_MMDetection/val.json', 'w') as outfile:
+with open('./val.json', 'w') as outfile:
     json.dump(val_object, outfile, indent='\t')
