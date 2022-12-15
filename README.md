@@ -1,4 +1,4 @@
-# OpenSW_Team5_Mlops_Master!!!🔥
+# OpenSW_Team5_MLOps_Master!!!🔥
 
 ## Contents
 
@@ -10,4 +10,3 @@
 
 
 02. Final_Project
-    
