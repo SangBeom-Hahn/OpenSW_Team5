@@ -29,7 +29,7 @@ import time
 # import pytz
 
 #토큰
-token = ""                                                          #토큰은 깃허브에 올릴 때 가려야 함.
+token = "5759317578:AAHB10nZxKvOzsBJBw8aBlWamsMWC7A1Fnk"                  #토큰은 깃허브에 올릴 때 가려야 함.
 bot = telegram.Bot(token)
 public_chat_name = "@ktest2022"
 
@@ -265,8 +265,8 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # 학습 완료시 30분 주기로 알려줌
-    schedule.every(30).minutes.do(job)
+    # 학습 완료시 1시간 주기로 알려줌
+    schedule.every(60).minutes.do(job)
     while True:
         schedule.run_pending()
-        time.sleep(30)
+        time.sleep(60)

@@ -39,11 +39,11 @@ data = dict(
     val=dict(
         type=dataset_type,
         ann_file=data_root + 'annotations/val.json',                     # val json 파일 경로 맞추기
-        img_prefix=data_root + 'images/train_image/',                                              # val 이미지 경로 맞추기
+        img_prefix=data_root + 'images/val_image/',                                              # val 이미지 경로 맞추기
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
         ann_file=data_root + 'annotations/val.json',                     # val json 파일 경로 맞추기
-        img_prefix=data_root + 'images/train_image/',                                              # test 이미지 경로 맞추기
+        img_prefix=data_root + 'images/val_image/',                                              # test 이미지 경로 맞추기
         pipeline=test_pipeline))
 evaluation = dict(metric=['bbox', 'segm'])
