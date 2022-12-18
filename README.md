@@ -1,9 +1,9 @@
 # OpenSW_Team5_MLOps_Master!!!🔥
-*Final_Project: mmdetection기반 K-fashion 데이터 학습
+Final_Project: mmdetection기반 K-fashion 데이터 학습
 
 ## Introduction
 
-본 프로젝트는 오픈소스 모델 ZOO인 mmdetection를 활용하여 custom 데이터로 AI 모델 학습을 하고 최종적으로는 docker image로 모델 개발 환경을 배포하는 것을 목표로 하고 있다. 또한 그 과정에서 오픈소스 협업 소프트웨어를 활용하여 팀원들과 이슈 및 형상관리를 실시한다.
+본 프로젝트는 오픈소스 모델인 mmdetection를 활용하여 custom 데이터로 AI 모델을 학습하고 최종적으로는 docker image로 모델 개발 환경을 배포하는 것을 목표로 하고 있다. 또한 그 과정에서 오픈소스 협업 소프트웨어를 활용하여 팀원들과 이슈 및 형상관리를 실시한다.
 
 ![predict](https://github.com/SangBeom-Hahn/OpenSW_Team5/blob/main/sample_image/main.jpg)
 
@@ -21,7 +21,7 @@
 
 ![project_pipeline](https://github.com/SangBeom-Hahn/OpenSW_Team5/blob/main/sample_image/mmdetection.PNG)
 
-OpenMMLab은 Pytorch기반으로 작성된 오픈 소스 프로젝트이며 학술 연구 및 산업 분야에서도 널리 사용된. OpenMMLab은 Computer Vision 분야의 여러 Vision Library와 최신 알고리즘들 그리고 수많은 pretrained model을 제공하는데 뛰어난 구현 성능, 효율적 Module 설계와 Config 시스템 기반을 통해 Data부터 Model 학습, 평가까지 아우르는 간편한 Pipeline을 적용하였다.
+OpenMMLab은 Pytorch기반으로 작성된 오픈 소스 프로젝트이며 학술 연구 및 산업 분야에서도 널리 사용된다. OpenMMLab은 Computer Vision 분야의 여러 Vision Library와 최신 알고리즘들 그리고 수많은 pretrained model을 제공하는데 뛰어난 구현 성능, 효율적 Module 설계와 Config 시스템 기반을 통해 Data부터 Model 학습, 평가까지 아우르는 간편한 Pipeline을 적용하였다.
 
 OpenMMLab에서 제공하는 Detection 라이브러리인 MMDetection의 MASK-RCNN을 사용하여 instace segmentation를 진행한다.
 
