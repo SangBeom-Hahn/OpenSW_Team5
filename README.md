@@ -43,14 +43,16 @@ OpenSW_Team5
 - mmdetection_code : MASK-RCNN 코드
 - bot.py : 텔레그램 봇 실행 코드
 
+## Local
+```
+python==3.7.13
+cuda 10.0 - rtx 2080 super
+```
 
 ## Requirements
-
 ```
-python==3.x
 pytorch==1.6.0
 torchvision==0.7.0
-cuda 10.0 - rtx 2080 super
 mmcv(mmcv-full)==1.7.0
 mmdet==2.26.0
 ```
