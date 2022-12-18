@@ -57,4 +57,5 @@ mmdet==2.26.0
 ## Authors
 
 |피선우|한상범|홍찬의|
+|:-:|:-:|:-:|
 |[Github](https://github.com/SunWoo98Pi)|[Github](https://github.com/SangBeom-Hahn)|[Github](https://github.com/hcu55)|
