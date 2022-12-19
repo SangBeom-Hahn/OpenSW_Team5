@@ -3,7 +3,7 @@ Final_Project: mmdetection기반 K-fashion 데이터 학습
 
 ## Introduction
 
-본 프로젝트는 오픈소스 모델인 mmdetection를 활용하여 custom 데이터로 AI 모델을 학습하고 최종적으로는 docker image로 모델 개발 환경을 배포하는 것을 목표로 하고 있다. 또한 그 과정에서 오픈소스 협업 소프트웨어를 활용하여 팀원들과 이슈 및 형상관리를 실시한다.
+본 프로젝트는 오픈소스 모델인 mmdetection을 활용하여 custom 데이터로 AI 모델을 학습하고 최종적으로는 docker image로 모델 개발 환경을 배포하는 것을 목표로 하고 있다. 또한 그 과정에서 오픈소스 협업 소프트웨어를 활용하여 팀원들과 이슈 및 형상관리를 실시한다.
 
 ![predict](https://github.com/SangBeom-Hahn/OpenSW_Team5/blob/main/sample_image/main.jpg)
 
