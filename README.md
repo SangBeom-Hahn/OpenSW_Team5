@@ -83,7 +83,7 @@ mmdet==2.26.0
 docker pull hsb422/k_fashion:0.01
 ```
 
-Run it with
+- Run it with
 
 ```shell
 docker run -it -v mmdetection_volume:/mmdetection/data hsb422/k_fashion
