@@ -77,13 +77,14 @@ mmcv(mmcv-full)==1.7.0
 mmdet==2.26.0
 ```
 
-## Using MMDetection with Docker
+## Using k_fashion with Docker
 
 ```shell
 docker pull hsb422/k_fashion:0.01
 ```
 
 - Run it with
+Download model checkpoint and move it to mmdetection_volume directory
 
 ```shell
 docker run -it -v mmdetection_volume:/mmdetection/data hsb422/k_fashion
