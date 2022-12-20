@@ -43,6 +43,26 @@ OpenSW_Team5
 - mmdetection_code : MASK-RCNN 코드
 - bot.py : 텔레그램 봇 실행 코드
 
+## Getting started
+1. Download the code from GitHub:
+```bash
+git clone https://github.com/SangBeom-Hahn/OpenSW_Team5
+cd OpenSW_Team5/mmdetection_code
+```
+
+2. Install the python libraries.
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the python script
+```bash
+python demo/image_demo.py ${IMAGE_FILE} \
+    configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py \
+    checkpoints/epoch_12.pth \
+    --device cuda:0
+```
+
 ## Local
 ```
 python==3.7.13
@@ -56,6 +76,19 @@ torchvision==0.7.0
 mmcv(mmcv-full)==1.7.0
 mmdet==2.26.0
 ```
+
+### Using MMDetection with Docker
+
+```shell
+docker pull hsb422/k_fashion:0.01
+```
+
+Run it with
+
+```shell
+docker run -it -v mmdetection_volume:/mmdetection/data hsb422/k_fashion
+```
+
 
 ## Authors
 
