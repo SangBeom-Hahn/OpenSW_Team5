@@ -44,18 +44,18 @@ OpenSW_Team5
 - bot.py : 텔레그램 봇 실행 코드
 
 ## Getting started
-1. Download the code from GitHub:
+- Download the code from GitHub:
 ```bash
 git clone https://github.com/SangBeom-Hahn/OpenSW_Team5
 cd OpenSW_Team5/mmdetection_code
 ```
 
-2. Install the python libraries.
+- Install the python libraries.
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the python script
+- Run the python script
 ```bash
 python demo/image_demo.py ${IMAGE_FILE} \
     configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py \
@@ -77,7 +77,7 @@ mmcv(mmcv-full)==1.7.0
 mmdet==2.26.0
 ```
 
-### Using MMDetection with Docker
+## Using MMDetection with Docker
 
 ```shell
 docker pull hsb422/k_fashion:0.01
