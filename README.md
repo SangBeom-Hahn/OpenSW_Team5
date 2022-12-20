@@ -1,5 +1,5 @@
 # OpenSW_Team5_MLOps_Master!!!🔥
-Final_Project: mmdetection기반 K-fashion 데이터 학습
+*Final_Project: mmdetection기반 K-fashion 데이터 학습
 
 ## Introduction
 
