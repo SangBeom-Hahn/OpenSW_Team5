@@ -97,3 +97,5 @@ docker run -it -v mmdetection_volume:/mmdetection/data hsb422/k_fashion
 |피선우|한상범|홍찬의|
 |:-:|:-:|:-:|
 |[Github](https://github.com/SunWoo98Pi)|[Github](https://github.com/SangBeom-Hahn)|[Github](https://github.com/hcu55)|
+
+- Blog : [Tistory(openSW)](https://hsb422.tistory.com/entry/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SW-%EC%8B%A4%EC%8A%B5-final-project)
